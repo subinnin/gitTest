@@ -1,0 +1,37 @@
+.scrollTextArea{
+    width: 100vw;
+    /* 한개의 높이 100vh  * 3개개*/
+    height: 300vh;
+}
+.scrollText {
+    position: fixed;
+    top: 40%;
+    text-align: center;
+    transition: all 2s ease;
+    opacity: 0;
+}
+.scrollText.active{
+    opacity: 1;
+}
+.scrollImg {
+    width: 100%;
+    position: fixed;
+    transition: all 2s ease;
+    opacity: 0;
+
+}
+.scrollImg.active{
+    opacity : 1;
+}
+.scrollInImg{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transform:translateY(100%);
+    transition: all 2s ease;
+}
+
+.scrollImg.active .scrollInImg{
+    transform: translateY(0);
+
+}
